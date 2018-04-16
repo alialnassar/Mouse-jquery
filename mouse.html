@@ -1,0 +1,46 @@
+<!Doctype>
+<Html>
+
+<head>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+
+    
+<body>
+    
+    
+    <script>
+   
+        $(document).ready(function(){
+        $(document).mousemove(function(event){
+        $("span").text(event.pageX + ", " + event.pageY);
+            
+            var z=event.pageX;
+            var w=event.pageY;
+             if(z>0 && w>0){
+                
+                alert("position of mouse is natural");
+            }
+            else{
+               alert("position of mouse is not natural"); 
+            }
+               });
+         });
+        
+  
+            
+         
+
+    </script>
+    <p>Mouse is at coordinates: <span></span>.</p>
+    
+    
+</body>
+
+
+
+
+
+
+</Html>
